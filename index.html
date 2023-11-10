@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Brigadeiria</title>
+</head>
+<body>
+    <nav id="menu"> 
+        <ul> 
+          <li><a href="#" onclick="loadPage('inicio.html')">Ínicio</a></li>
+          <li><a href="#" onclick="loadPage('sobre.html')">Sobre</a></li>
+          <li><a href="#" onclick="loadPage('cardapio.html')">Cardápios</a></li>
+          <li><a href="#" onclick="loadPage('contatos.html')">Contatos</a></li>
+        </ul> 
+    </nav>
+    <aside>
+        <!-- ASIDE DO PERFIL -->
+    </aside>
+    <main id="content">
+        <!-- DIV QUE VAI SER PREENCHIDA PELAS
+        PAGINAS HTML NA PASTA "CONTENT" -->
+    </main>
+</body>
+<script>
+function loadPage(page) {
+    fetch(page)
+        .then(response => response.text())
+        .then(html => {
+            var contentElement = document.getElementById('content');
+            contentElement.innerHTML = html;
+        })
+        .catch(error => console.error('Erro ao carregar a página', error));
+}
+</script>
+</html>
