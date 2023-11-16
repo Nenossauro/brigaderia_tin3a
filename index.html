@@ -4,38 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="index.js"></script>
     <title>Brigadeiria</title>
 </head>
 <body style="background-color: black;">
-    <nav id="menu"> 
-        <ul> 
-          <a href="#" onclick="loadPage('inicio.html')">Ínicio</a>
-          <a href="#" onclick="loadPage('sobre.html')">Sobre</a>
-          <a href="#" onclick="loadPage('cardapio.html')">Cardápios</a>
-          <a href="#" onclick="loadPage('contatos.html')">Contatos</a>
-        </ul> 
+    <nav id="menu">
+        <div>
+            <ul> 
+                <a href="#" >Ínicio</a>
+                <a href="sobre.html" >Sobre</a>
+                <a href="cardapio.html" >Cardápios</a>
+                <a href="contatos.html" >Contatos</a>
+            </ul>
+        </div>
+        
+        <div class="imgdiv">
+            <img src="img/user-circle.png">
+        </div>
     </nav>
+
     <div class="container">
-        <div class="texto-botao">
-            <h1>Brigaderia !</h1>
+        <div class="left-wrap">
+            <div class="texto-botao">
+            <h1>Brigaderia!</h1>
             <h3>Bem-vindo à nossa Doçura Virtual! Explore nossos irresistíveis brigadeiros gourmet e faça seus momentos mais doces. Estamos aqui para adoçar sua jornada. Bom apetite!</h3>
             <button id="cardapio-btn"><h2>Cardápio</h2></button>
             <h4>Já tem uma conta? <a href="#">Faça login!</a></h4>
+            </div>
+            <div class="imagem-redonda">
+                <img src="https://octoshop.sfo2.digitaloceanspaces.com/lojas/alquimiafuncional/uploads_produto/brigadeiro-2-62a7a6689aa7f.png">
+            </div>
         </div>
-        <div class="imagem-redonda">
-            <img src="https://octoshop.sfo2.digitaloceanspaces.com/lojas/alquimiafuncional/uploads_produto/brigadeiro-2-62a7a6689aa7f.png" alt="">
+        <div class="login-enzo">
+
+            <div class="user-wrap">
+                <div class="userimg">
+                    <img src="img/noimg.png">
+                </div>
+                <div class="username">
+                    <h2>Nome do usuario</h2>
+                </div>
+            </div>
+            <div class="option-wrap">
+                <div class="carrinho">
+                    <div class="carrinho-data-img">
+                        <img src="img/cart.png">
+                    </div>
+                    <div class="carrinho-text-div">
+                        <h2>Ver o carrinho</h2>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
 </body>
-<script>
-function loadPage(page) {
-    fetch(page)
-        .then(response => response.text())
-        .then(html => {
-            var contentElement = document.getElementById('content');
-            contentElement.innerHTML = html;
-        })
-        .catch(error => console.error('Erro ao carregar a página', error));
-}
-</script>
 </html>
