@@ -129,6 +129,84 @@ input, .form {
   transition: background-color 0.3s ease;
 }
 
+
 .form:hover {
   background-color: #0056b3;
+
+   /* o cardápio */
+.user-wrap{
+    display: flex;
+    flex-direction: column;
 }
+    .userimg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+    .userimg img{
+        width: 200px;
+        height: 200px;
+    }
+
+.option-wrap{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.carrinho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+    .carrinho h2, .carrinho img{
+        margin-left: 10px
+    }
+
+/*div de cada brigadeiro */
+.user-wrap{
+    display: flex;
+    flex-direction: column;
+}
+    .userimg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+    .userimg img{
+        width: 200px;
+        height: 200px;
+    }
+
+.option-wrap{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.carrinho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+    .carrinho h2, .carrinho img{
+        margin-left: 10px
+    }
+
+/*div de cada brigadeiro */
+.product-div{
+    width: 150px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 25px;
+}
+    .product-wrap{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
