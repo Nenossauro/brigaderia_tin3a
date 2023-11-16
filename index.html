@@ -6,22 +6,26 @@
     <link rel="stylesheet" href="style.css">
     <title>Brigadeiria</title>
 </head>
-<body>
+<body style="background-color: black;">
     <nav id="menu"> 
         <ul> 
-          <li><a href="#" onclick="loadPage('inicio.html')">Ínicio</a></li>
-          <li><a href="#" onclick="loadPage('sobre.html')">Sobre</a></li>
-          <li><a href="#" onclick="loadPage('cardapio.html')">Cardápios</a></li>
-          <li><a href="#" onclick="loadPage('contatos.html')">Contatos</a></li>
+          <a href="#" onclick="loadPage('inicio.html')">Ínicio</a>
+          <a href="#" onclick="loadPage('sobre.html')">Sobre</a>
+          <a href="#" onclick="loadPage('cardapio.html')">Cardápios</a>
+          <a href="#" onclick="loadPage('contatos.html')">Contatos</a>
         </ul> 
     </nav>
-    <aside>
-        <!-- ASIDE DO PERFIL -->
-    </aside>
-    <main id="content">
-        <!-- DIV QUE VAI SER PREENCHIDA PELAS
-        PAGINAS HTML NA PASTA "CONTENT" -->
-    </main>
+    <div class="container">
+        <div class="texto-botao">
+            <h1>Brigaderia !</h1>
+            <h3>Bem-vindo à nossa Doçura Virtual! Explore nossos irresistíveis brigadeiros gourmet e faça seus momentos mais doces. Estamos aqui para adoçar sua jornada. Bom apetite!</h3>
+            <button id="cardapio-btn"><h2>Cardápio</h2></button>
+            <h4>Já tem uma conta? <a href="#">Faça login!</a></h4>
+        </div>
+        <div class="imagem-redonda">
+            <img src="https://octoshop.sfo2.digitaloceanspaces.com/lojas/alquimiafuncional/uploads_produto/brigadeiro-2-62a7a6689aa7f.png" alt="">
+        </div>
+    </div>
 </body>
 <script>
 function loadPage(page) {
