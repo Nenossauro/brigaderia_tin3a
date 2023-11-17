@@ -19,7 +19,9 @@
         background-color: #d5237d;
         overflow: hidden;
     }
-    
+    .imgdiv{
+        float: right;
+    }
     nav a {
         float: left;
         display: block;
@@ -132,9 +134,14 @@ input, .form {
 
 .form:hover {
   background-color: #0056b3;
-
+}
    /* o cardápio */
+.left-wrap{
+    display: flex;
+    flex-direction: row;
+}
 .user-wrap{
+    
     display: flex;
     flex-direction: column;
 }
@@ -210,3 +217,35 @@ input, .form {
         flex-direction: row;
         flex-wrap: wrap;
     }
+
+/* homem é homem mulher é mulher, estuprador é diferente né*/
+
+.container-cont, .container-sobr{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+.left-cont, .right-cont, .left-sobr, .right-sobr{
+    width: 50%;
+    height: 100%;
+}
+
+.container-cont h2, .container-sobr h2{
+    text-align: left;
+    color: black;
+}
+
+.container-sobr h1{
+    font-size: 35px;
+    width: 25%;
+    border-bottom: 2px solid #d5237d;
+    text-align: center;
+    color: black;
+}
+
+#cont-img, #sobr-img{
+    margin-left: 4rem;
+    width: 80%;
+}
+
+
